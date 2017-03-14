@@ -1,0 +1,8 @@
+<wpml-config>
+    <admin-texts>
+        <key name="ef_herotitle" />
+        <key name="ef_herotagline" />
+        <key name="ef_logo" />
+        <key name="ef_footer_content" />
+    </admin-texts>
+</wpml-config>

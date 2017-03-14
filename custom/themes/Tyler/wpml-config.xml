@@ -1,0 +1,9 @@
+<wpml-config>
+    <admin-texts>
+        <key name="event_title" />
+        <key name="event_tagline" />
+        <key name="logo" />
+        <key name="footer_content" />
+    </admin-texts>
+</wpml-config>
+
