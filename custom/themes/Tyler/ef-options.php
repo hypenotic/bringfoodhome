@@ -25,6 +25,7 @@ $color_palette = new EF_Select_Field(
 	array( 'options' => array( 
 		'basic' => 'Basic',
 		'bfh-2015' => 'Bring Food Home 2015',
+		'bfh-2017' => 'Bring Food Home 2017',
 		'bangkok' => 'Bangkok',
 		'barcelona' => 'Barcelona',
 		'helsinki' => 'Helsinki',

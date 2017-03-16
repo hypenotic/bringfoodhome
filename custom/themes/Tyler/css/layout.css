@@ -90,6 +90,11 @@ html, body {
     color: #242424;
     height: 100%;
 }
+
+body {
+    overflow-x: hidden;
+}
+
 body.header-sticky {
     padding-top: 46px;
 }
