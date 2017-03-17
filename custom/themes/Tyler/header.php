@@ -41,7 +41,8 @@
             <a href="<?php echo esc_url(home_url()); ?>" id="logo">
 				<?php 
 					if(ICL_LANGUAGE_CODE=='en' || ICL_LANGUAGE_CODE=='fr') {
-						$logo_url=get_bloginfo('template_url')."/images/logos/bfh-logo-".ICL_LANGUAGE_CODE.".jpg";
+						// $logo_url=get_bloginfo('template_url')."/images/logos/bfh-logo-".ICL_LANGUAGE_CODE.".jpg";
+                        $logo_url=tyler_set_theme_logo();
 					} else {
 						$logo_url=tyler_set_theme_logo();
 					}
