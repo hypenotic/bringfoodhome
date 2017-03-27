@@ -19,6 +19,7 @@ if(function_exists('espresso_version')){
 <div class="container widget">
     <div class="landing">
         <div class="bg"<?php if (isset($ef_options['ef_hero'])) { ?> style="background-image: url('<?php echo $ef_options['ef_hero']; ?>')"<?php } ?>></div>
+<!--         <div class="dark-overlay"></div> -->
         <h1><span class="text-fit" <?php if (isset($ef_options['ef_title_color'])) echo 'style="color:' . $ef_options['ef_title_color'] . '"'; ?>><?php if (isset($ef_options['ef_herotitle'])) {
     echo _e(stripslashes($ef_options['ef_herotitle']),'tyler');
 } ?></span></h1>
@@ -38,7 +39,8 @@ if(function_exists('espresso_version')){
                 }
                 if (isset($reg_widget['registrationshowcalltoaction']) && $reg_widget['registrationshowcalltoaction'] == 1) {
                     ?>
-                    <a href="<?php echo home_url('/'); ?>#tile_registration" class="btn btn-lg btn-secondary"><?php _e('REGISTER NOW', 'tyler') ?></a>
+                    <!-- <a href="<?php //echo home_url('/'); ?>#tile_registration" class="btn btn-lg btn-secondary"><?php //_e('REGISTER NOW', 'tyler') ?></a> -->
+                    <a href="<?php echo $reg_widget['registrationeventbrite'];?>" target="_blank" class="btn btn-lg btn-secondary"><?php _e('REGISTER NOW', 'tyler') ?></a>
             <?php
             break;
         }

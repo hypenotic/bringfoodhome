@@ -1,4 +1,5 @@
 a {color:#C72127;}
+a:hover {color:#C72127;}
 .bg-primary {background-color: #C72127;}
 .bg-secondary {background-color: #2b3273;}
 .color-primary {color: #C72127;}
@@ -9,12 +10,12 @@ header ul li.current-menu-item a, header ul li a:hover {background: #96191d;colo
 header ul li.register a {background-color: #C72127;color: #fff;}
 .timecounter {color: #fff;background-color: #C72127;}
 .heading {background: #C72127;color: #fff;}
-.btn-primary {color: #ffffff;background-color: #2b3273;}
+.btn-primary {color: #ffffff;background-color: #C72127;}
 .btn-check.btn-primary {border-color: #C72127;color: #C72127;}
 .btn-check.btn-primary.active, .btn-check.btn-primary:hover {color: #fff;background-color: #C72127;}
-.btn-secondary {color: #fff;background-color: #2b3273;border-color: #C72127;}
+.btn-secondary {color: #fff;background-color: #C72127;border-color: #C72127;}
 .landing .box {background: #C72127;}
-.speakers .speaker .speaker-inner {background: #2b3273;}
+.speakers .speaker .speaker-inner {background: #C72127;}
 .speakers .speaker.featured .speaker-inner {background: #C72127;}
 .speakers .speaker .speaker-inner:hover {color: #C72127;}
 .speakers .speaker.featured .speaker-inner:hover {color: #2b3273;}
@@ -22,20 +23,20 @@ header ul li.register a {background-color: #C72127;color: #fff;}
 .sessions .session .speaker.featured img {border-color: #2b3273;box-shadow: 0px 0px 0px 1px #2b3273;}
 .sessions.list .day-floating > span {border-top: 4px solid #C72127;background: #fff;border-bottom: 2px solid #d2d2d2;}
 .sessions.single .location strong {color: #C72127;}
-h3.sponsor {color: #2b3273;}
-.color-secondary {color: #2b3273;}
-.border-secondary {border-color: #2b3273;}
-.location .explore {background: #f1f1f1;color: #2b3273;}
+h3.sponsor {color: #C72127;}
+.color-secondary {color: #C72127;}
+.border-secondary {border-color: #C72127;}
+.location .explore {background: #f1f1f1;color: #C72127;}
 .location .explore .heading {color: #fff;background: #96191d;}
 .location .map {border: 1px solid #2b3273;}
 .mediabox a.post .desc strong {color: #C72127;}
-.articles article .image .date {color: #fff;background-color: #2b3273;}
-.articles article:hover .image, .articles article:hover  .post-content {border-color: #2b3273;}
-.articles article .post-content .heading {color: #2b3273;}
+.articles article .image .date {color: #fff;background-color: #C72127;}
+.articles article:hover .image, .articles article:hover  .post-content {border-color: #C72127;}
+.articles article .post-content .heading {color: #C72127;}
 .sidebar .tyler_comments_display h2 {color: #fff;background: #C72127;}
 .sidebar .tyler_comments_display li a:hover {border-color: #C72127;}
 .sidebar .tyler_comments_display li .time {color: #2b3273;}
-.sidebar .widget_text h2 {color: #2b3273;border-bottom: 1px solid #2b3273;}
+.sidebar .widget_text h2 {color: #C72127;border-bottom: 1px solid #C72127;}
 .comments-area h2 {color: #fff;background: #C72127;}
 .comments-area form input[type=submit] {background: #2b3273;color: #fff;}
 .commentlist .comment .comment-content {border: 1px solid #C72127;}
@@ -43,11 +44,35 @@ h3.sponsor {color: #2b3273;}
 footer .credits {background: #313131;color: #C72127;}
 #twitter_fullscreen li {border: 1px solid #C72127;}
 .twitter .tweet {border:1px solid #2b3273;}
-#tile_media .btn-check{background:#fff;color:#2b3273;border-color:#2b3273;}
+#tile_media .btn-check{background:#fff;color:#C72127;border-color:#C72127;}
 #tile_media .btn-check.active{background:#C72127;color:#fff;border-color:#C72127;}
-.jspDrag{background:#2b3273;}
-.landing .btn-secondary {border-color:#2b3273;}
+.jspDrag{background:#C72127;}
+.landing .btn-secondary {border-color:#C72127;}
 #tile_calltoaction .btn-secondary{background-color: #C72127;}
 .btn-secondary:hover, .btn-secondary:active, .btn-secondary:focus {color: #fff;background-color: #C72127;border-color: transparent;}
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open .dropdown-toggle.btn-primary {color: #ffffff;background-color: #C72127;border-color: #C72127;}
+/* CUSTOM */
 #tile_contact .btn-secondary{background-color:#C72127;}
+.bg{position:relative;filter: brightness(50%);}
+.dark-overlay:after {
+	content: '';
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	height: 100%;
+	background-color: rgba(0,0,0,0.4);
+	z-index: 1;
+}
+#tile_description {padding-top:30px;max-width: 800px;font-size: 20px;text-align: center;}
+#tile_description h2 {font-weight:bold;text-align: center;}
+.landing .lead { height: 50px; }
+.landing .btn {margin-bottom:70px;}
+.landing h1 {padding-top:50px;}
+@media (min-width: 1200px) {
+  header #menu-primary {margin-top: 20px;}
+  header {height:80px;}
+  header #logo {margin-top: 10px;}
+}
+
+

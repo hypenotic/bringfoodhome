@@ -58,16 +58,16 @@ class Ef_Registration_Widget extends WP_Widget {
 	    echo stripslashes($args['before_widget']);?>
 	    
 	    <!-- REGISTRATION -->
-	    <div id="tile_registration" class="container widget">
-	        <h2><?php echo stripslashes($registrationtitle); ?></h2>
-	        <h3><?php echo stripslashes($registrationsubtitle); ?></h3>
+	    <!-- <div id="tile_registration" class="container widget">
+	        <h2><?php //echo stripslashes($registrationtitle); ?></h2>
+	        <h3><?php //echo stripslashes($registrationsubtitle); ?></h3>
 	        <div style="margin:2em 0">
-	            <?php echo do_shortcode(stripslashes($registrationeventbrite)); ?>
+	            <?php //echo do_shortcode(stripslashes($registrationeventbrite)); ?>
 	        </div>
 	        <p>
-	            <?php echo do_shortcode(stripslashes($registrationtext)); ?>
+	            <?php //echo do_shortcode(stripslashes($registrationtext)); ?>
 	        </p>
-	    </div>
+	    </div> -->
 	    <?php
 	    echo stripslashes($args['after_widget']);
 	}
@@ -179,7 +179,9 @@ function ef_wp_nav_menu_items( $items, $args ) {
 	        	update_option( 'widget_ef_registration', $widget_ef_registration ); 
 	        }
 			elseif( isset( $reg_widget['registrationshowtopmenu'] ) && $reg_widget['registrationshowtopmenu'] == 1 ) {
-				$items .= '<li class="menu-item register"><a href="' . home_url( '/' ) . '#tile_registration">' . __('Register', 'dxef') . '</a></li>';
+				// $items .= '<li class="menu-item register"><a href="' . home_url( '/' ) . '#tile_registration">' . __('Register', 'dxef') . '</a></li>';
+				// break;
+				$items .= '<li class="menu-item register"><a href="' . $reg_widget['registrationeventbrite'] . '" target="_blank">' . __('Register', 'dxef') . '</a></li>';
 				break;
 			}
 		}
