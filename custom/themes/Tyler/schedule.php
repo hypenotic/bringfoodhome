@@ -23,10 +23,10 @@ $session_locations = get_terms('session-location');
     <div class="container">
         <?php the_content(); ?>
         <p><br /></p>
-        <!-- <div class="loader-img">
+        <div class="loader-img">
             <img alt="Loading" src="<?php echo get_template_directory_uri(); ?>/images/ajax-loader.gif" width="32" height="32" align="center" />
-        </div> -->
-        <!-- <div class="schedule">
+        </div>
+        <div class="schedule">
             <ul class="nav nav-tabs pull-right">
                 <?php if (!empty($session_tracks)) { ?>
                 <li>
@@ -77,7 +77,7 @@ $session_locations = get_terms('session-location');
             <div class="clearfix"></div>
             <div class="sessions list">
             </div>
-        </div> -->
+        </div>
     </div>
 <?php endwhile; // end of the loop. ?>
 
